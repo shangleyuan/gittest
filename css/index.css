@@ -1,0 +1,28 @@
+#indexbanner {height: 400px;margin: 0 auto;position: relative;width:1280px ;overflow: hidden;}
+#indexbanner .lunboul{position: absolute;left:-320px;overflow: hidden;width: 11520px;}
+#indexbanner .lunboul li,img{float: left;}
+#indexbanner .slidebtn{position: absolute;width: 100%;height: 20px;bottom: 20px;margin-bottom: 0;left: 0;text-align: center;z-index: 10}
+#indexbanner .slidebtn li{cursor: pointer;display: inline-block;list-style: none;width: 18px;height: 18px;border: 1px solid #64a131;border-radius: 50%;margin: 0 8px;background: rgba(100,161,49,0.1);}
+#indexbanner .slidebtn li.active{background: #64a131}
+
+/**************************lazy***********************/
+.lazy{width: 100%;}
+.lazycon{width: 1280px;padding:10px 0 40px;overflow: hidden; }
+.lazycon img{margin-right: 26px;}
+.lazycon img.lastimg{margin:0;}
+/**************************fruit***********************/
+.fruitintr{border-top: 1px solid #cccccc;width: 1280px;margin: 0 auto;padding: 15px 0 10px;height: 67px;font-size: 14px;line-height: 67px;overflow: hidden;}
+.fruitintr a{float: right;color: #333;padding-right: 5px;}
+/**************************fruit-tui***********************/
+.fruit-tui{width:1290px ;margin: 0 auto;margin-bottom:40px;height: 610px; }
+.fruit-tui dl{float: left;}
+.fruit-tui dl img{width:248px ;height:248px ;position: absolute;}
+.fruit-tui dl .bigimg{height:610px ;margin:0 auto;}
+.fruit-tui dl a{width:248px ;height:248px ;overflow: hidden;margin:0 5px;float: left;position: relative;}
+.fruit-tui dl .biga{height:610px ;}
+.fruit-tui dl dd{color:#555;margin:3px 5px 6px;width: 248px;height: 48px;float: left;line-height: 24px;font-size: 14px;position: relative;}
+.fruit-tui dl dd .s-unit{color:#999;margin-right: 5px;}
+.fruit-tui dl dd .click-buycar{cursor: pointer;position: absolute;width: 34px;height: 34px;right: 0;top:7px;background:url(../img/icons.png) no-repeat -517px -243px;}
+/****************************fruitad*************************/
+.fruitad {width: 1280px;margin: 0 auto;height: 120px;margin-bottom: 40px;}
+
