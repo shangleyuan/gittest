@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>testgulp</title>
+	<link rel="stylesheet" type="text/css" href="../css/go.css">
+	
+	<style>
+		div{width: 300px;height: 300px;margin:80px auto;perspective: 1600px;transform-style: preserve-3d;transition: all 1s;border: 1px solid blue;
+			 }
+		div img,div p{width: 100%;height: 100%;position: absolute;color: yellow;font-size: 30px;text-align: center;line-height: 200px;}
+		div img{transform:translateZ(150px);}
+		div  p{transform:rotateX(-90deg) translateZ(100px);background: gray; }
+		div:hover{transform:translateZ(-150px) rotateX(90deg); }
+	</style>
+</head>
+<body>
+	<div>
+		<img src="img/3.jpg" alt="">
+		<p>你好，大煞笔</p>
+	</div>
+</body>
+</html>

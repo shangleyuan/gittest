@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情页</title>
+    <!-- <link href="../css/bootstrap.min.css" rel="stylesheet">  -->
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/zhuce.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <style>
+    
+    </style>
+
+    <script src="../assets/jquery-1.12.0.js"></script>
+    <script src="../assets/jquery.imagezoom.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/xiangqing.js"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <!---------------------------------------------head------------------>
+    <div class="head">
+        <div class="headcon">
+            <div class="head-left">
+                <i><img src="../img/car.jpg"></i>
+                <div id='address'>广州</div>
+                <b><img src="../img/sanjiao.jpg"></b>
+            </div>
+            <h4>400-720-0070</h4>
+            <ul class="headnav">
+                <li><a href="#">[登陆]</a> &nbsp;   , &nbsp;  <a href="#" > [注册有惊喜]</a></li>
+                <li class="hideli"><a href="#"><img src="../img/phone.jpg">果园公告</a>
+                    <div class="guoranhide">
+                        <ul >
+                                <li>
+                                    <a href="http://www.fruitday.com/notice/detail/806" target="_blank"> 天天果园400热线系统升级恢复公告</a>
+                                    <em>new</em>                            
+                                </li>
+                                <li>
+                                    <a href="http://www.fruitday.com/notice/detail/805" target="_blank"> 天天果园400热线系统升级公告</a>
+                                    <em>new</em>                            
+                                </li>
+                                <li>
+                                    <a href="http://www.fruitday.com/notice/detail/804" target="_blank">全仓充值活动调整公告</a>
+                                    <em>new</em>                            
+                                </li>
+                        </ul>
+                        <div><a href="http://www.fruitday.com/notice" target="_blank">查看更多 &gt;</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">奖券兑换</a></li>
+                <li class="hideli"><a href="#">手机果园</a>
+                    <div class="shoujihide">
+                        <div>
+                            <span>下载果园app,即享果园特价商品</span>
+                            
+                        </div>
+                        <dl>
+                            <dt>
+                                <img src="../img/guan_ewcode2.jpg" >
+                            </dt>
+                            <dd>
+                                    <img src="../img/guan_btn01.jpg">
+                                    <img src="../img/guan_btn02.jpg" alt="">                     
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <img src="../img/guan_ewcode1.jpg" >
+                            </dt>
+                            <dd>
+                                <span>关注果园微信</span>
+                                优惠信息实时掌握
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+            <div id="boxcity">
+                <h5>热门城市:</h5>
+                <ul class="hotcity">
+                    <li>
+                        <a href="#">上海</a>
+                    </li>
+                    <li>
+                        <a href="#">广州</a>
+                    </li>
+                                 <li>
+                        <a href="#">北京</a>
+                    </li>
+                                 <li>
+                        <a href="#">苏州</a>
+                    </li>
+                                 <li>
+                        <a href="#">南京</a>
+                    </li>
+                                 <li>
+                        <a href="#">深圳</a>
+                    </li>
+                                        <li>
+                        <a href="#">成都</a>
+                    </li>
+                </ul>
+                <h5>选择城市:</h5>
+                <ul class="choosecity">
+                    <li>
+                        <a href="#" data-id="106092">上海</a>
+                    </li>
+                    <li>
+                        <a href="#" data-id="145855">上海郊区</a>
+                    </li>
+                    <li>
+                        <a href="#" class="provicesel">
+                            <span >
+                                >
+                            </span>
+                            江苏
+                        </a>
+                        <div class="citysel">
+                                                        <a href="#" >常州</a>
+                                                        <a href="#" >淮安</a>
+                                                        <a href="#" >连云港</a>
+                                                        <a href="#" >南京</a>
+                                                        <a href="#" >南通</a>
+                                                        <a href="#" >苏州</a>
+                                                        <a href="#" >泰州</a>
+                                                        <a href="#" >无锡</a>
+                                                        <a href="#" >宿迁</a>
+                                                        <a href="#" >徐州</a>
+                                                        <a href="#" >盐城</a>
+                                                        <a href="#" >扬州</a>
+                                                        <a href="#" >镇江</a>
+                                                    </div>
+                    </li>
+                    <li>
+                        <a href="#" class="provicesel">
+                            <span >
+                                >
+                            </span>
+                            浙江
+                        </a>
+                        <div class="citysel">
+                                                        <a href="#">杭州</a>
+                                                        <a href="#">湖州</a>
+                                                        <a href="#">嘉兴</a>
+                                                        <a href="#">金华</a>
+                                                        <a href="#"">丽水</a>
+                                                        <a href="#">宁波</a>
+                                                        <a href="#">衢州</a>
+                                                        <a href="#">绍兴</a>
+                                                        <a href="#">台州</a>
+                                                        <a href="#">温州</a>
+                                                        <a href="#">舟山</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="provicesel">
+                            <span >
+                                >
+                            </span>
+                            安徽
+                        </a>
+                        <div class="citysel">
+                                                        <a href="#">安庆</a>
+                                                        <a href="#">蚌埠</a>
+                                                        <a href="#">亳州</a>
+                                                        <a href="#">池州</a>
+                                                        <a href="#">滁州</a>
+                                                        <a href="#">阜阳</a>
+                                                        <a href="#">合肥</a>
+                                                        <a href="#">淮北</a>
+                                                        <a href="#">淮南</a>
+                                                        <a href="#">黄山</a>
+                                                        <a href="#">六安</a>
+                                                        <a href="#">马鞍山</a>
+                                                        <a href="#">铜陵</a>
+                                                        <a href="#">芜湖</a>
+                                                        <a href="#">宿州</a>
+                                                        <a href="#">宣城</a>
+                        </div>
+                    </li>
+                                                                                <li>
+                        <a href="#" data-id="143949">北京</a>
+                    </li>
+                                                                                <li>
+                        <a href="#" data-id="144005">天津</a>
+                    </li>
+                                                                                <li>
+                        <a href="#" class="provicesel">
+                            <span >
+                                >
+                            </span>
+                            河北
+                        </a>
+                        <div class="citysel">
+                                                        <a href="#">石家庄</a>
+                                                        <a href="#">廊坊</a>
+                                                        <a href="#">承德</a>
+                                                        <a href="#">唐山</a>
+                                                        <a href="#">保定</a>
+                                                        <a href="#">沧州</a>
+                                                        <a href="#">邯郸</a>
+                                                        <a href="#">衡水</a>
+                                                        <a href="#">秦皇岛</a>
+                                                        <a href="#">邢台</a>
+                                                        <a href="#">张家口</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="provicesel">
+                            <span >
+                                >
+                            </span>
+                            广东
+                        </a>
+                        <div class="citysel">
+                                                        <a href="#">深圳</a>
+                                                        <a href="#">广州</a>
+                                                        <a href="#">珠海</a>
+                                                        <a href="#">汕头</a>
+                                                        <a href="#">韶关</a>
+                                                        <a href="#">佛山</a>
+                                                        <a href="#">江门</a>
+                                                        <a href="#">湛江</a>
+                                                        <a href="#">茂名</a>
+                                                        <a href="#">肇庆</a>
+                                                        <a href="#">惠州</a>
+                                                        <a href="#">梅州</a>
+                                                        <a href="#">汕尾</a>
+                                                        <a href="#">河源</a>
+                                                        <a href="#">阳江</a>
+                                                        <a href="#">清远</a>
+                                                        <a href="#">东莞</a>
+                                                        <a href="#">中山</a>
+                                                        <a href="#">揭阳</a>
+                                                        <a href="#">云浮</a>
+                                                        <a href="#">潮州</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="provicesel">
+                            <span >
+                                >
+                            </span>
+                            四川
+                        </a>
+                        <div class="citysel">
+                                                        <a href="#">成都</a>
+                                                        <a href="#">巴中</a>
+                                                        <a href="#">达州</a>
+                                                        <a href="#">德阳</a>
+                                                        <a href="#">广安</a>
+                                                        <a href="#">广元</a>
+                                                        <a href="#">乐山</a>
+                                                        <a href="#">泸州</a>
+                                                        <a href="#">眉山</a>
+                                                        <a href="#">绵阳</a>
+                                                        <a href="#">南充</a>
+                                                        <a href="#">内江</a>
+                                                        <a href="#">遂宁</a>
+                                                        <a href="#">宜宾</a>
+                                                        <a href="#">资阳</a>
+                                                        <a href="#">自贡</a>
+                                                        <a href="#">雅安</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">重庆</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------nav------------------>
+
+    <div class="nav">
+        <div class="navcon">
+            <h2>
+                <a href="#"><img src="../img/logo.jpg"></a>
+            </h2>
+            <ul>
+                <li class="firstli">
+                    <a href="http://www.fruitday.com/">
+                        首页
+                        <span>Home</span>
+                    </a> 
+                </li>
+                <li >
+                    <a href="http://www.fruitday.com/prolist/index/40" target="_blank">
+                        鲜果
+                        <span>Fruit</span>
+                    </a> 
+                </li>
+                <li >
+                    <a href="http://www.fruitday.com/prolist/index/277" target="_blank">
+                        生鲜
+                        <span>Fresh</span>
+                    </a>
+                    
+                </li>
+                <li >
+                    <a href="http://www.fruitday.com/prolist/index/43" target="_blank">
+                        礼品
+                        <span>Gift</span>
+                    </a>
+                    
+                </li>
+                <li class="lastli">
+                    <a href="http://www.fruitday.com/member/center" target="_blank">
+                        会员中心
+                        <span>VIP Club</span>
+                    </a>
+                    
+                </li>
+            </ul>
+            <div class="nav-right">
+                
+                <div class="search">
+                    <input type="text"  value="樱桃">
+                    <input type='button' class="searchbutton">
+                    <div class="hotsearch">
+                        热门：
+                        <a href="http://www.fruitday.com/prolist/search/%E8%93%9D%E8%8E%93" target="_blank">蓝莓</a>
+                        <a href="http://www.fruitday.com/prolist/search/%E6%A8%B1%E6%A1%83" target="_blank">樱桃</a>
+                        <a href="http://www.fruitday.com/prolist/search/%E5%A5%87%E5%BC%82%E6%9E%9C" target="_blank">奇异果</a>
+                        <a href="http://www.fruitday.com/prolist/search/%E8%8D%94%E6%9E%9D" target="_blank">....</a>
+                    </div>                                    
+                </div>
+                <div class="buycar">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------good-detail---------------------------->
+    <div class="good-content">
+        <p class="p1"><a href="index.html"><b>首页</b></a>><a href="">新鲜水果</a>><span>无锡阳山水蜜桃</span></p>
+        <div class="p3">
+            <div class="p-big"><img src="../img/14689240327811.jpg" alt="" rel='../img/14689240327811.jpg'>
+            </div>
+            <ul class="p2">
+                <li><img src="../img/14689240327811.jpg" mid="../img/14689240327811.jpg" big="../img/14689240327811.jpg"></li>
+                <li><img src="../img/14689240356906.jpg" mid='../img/../img/14689240356906.jpg' big='../img/14689240356906.jpg'></li>
+                <li><img src="../img/14689240433398.jpg" mid='../img/14689240433398.jpg' big='../img/14689240433398.jpg'></li>
+            </ul>
+        </div>
+        <div class="p4">
+            <h4>无锡阳山水蜜桃</h4>
+            <p class="p4-title">鲜嫩多汁 可以吸着吃</p>
+            <div class="guoranjia"><span>果然价</span><b>￥49.90</b><img src="../img/api.php.png"></div>
+            <div class="p4-number">
+                <h5>规格</h5>
+                <span>6个</span>   
+            </div>
+            <div class="p4-number">
+                <h5>配送至</h5>
+                <select>
+                    <option>上海</option>
+                </select>
+                <em>无货</em>
+                   
+            </div>
+            <div class="p4-number">
+                <h5>数量</h5>
+                <div class="in-span">
+                    <span class="choose-number">－</span>
+                    <input type="text" value="1">
+                    <span class="choose-number">＋</span>
+                </div>   
+            </div>
+            <p class="p4-button"><button >立即购买</button><button class="buynow">加入购物车</button></p>
+            <div class="good-intro">
+                <h5>甜度</h5>
+                <span><img src="../img/circle-3.png"></span>
+            </div>
+            <div class="good-intro">
+                <h5>产地</h5>
+                <span>中国</span>
+            </div>
+            <div class="good-intro">
+                <h5>储存方法</h5>
+                <span>0°冷藏</span>
+            </div>
+            <div class="good-intro">
+                <h5>备注</h5>
+                <span>单个重200-250克</span>
+            </div>
+            <div class="good-intro">
+                <h5>商品编号</h5>
+                <span>2160719103</span>
+            </div>
+        </div>
+    </div>
+    <!------------------------------longimg---------------------------->
+    <div class="longimg">
+        <div class="longimg-p">
+            <div class="guke-say">
+                <span class="spanclicked">商品简介</span>
+                <span>顾客评价<b>(19)</b></span>
+                <button class="buynow"><i></i>加入购物车</button>
+            </div>
+            <div class="in-img">
+                <img src="../img/14689240327811.jpg" alt="">
+                <img src="../img/14689240342444.jpg" alt="">
+                <img src="../img/14689240356906.jpg" alt="">
+                <img src="../img/14689240374558.jpg" alt="">
+                <img src="../img/14689240399165.jpg" alt="">
+                <img src="../img/14689240433398.jpg" alt="">
+                <img src="../img/14689240747045.jpg" alt="">
+                <img src="../img/14689240774834.jpg" alt="">
+            </div>
+            <div class="in-img hide">
+                <ul class="in-img-hao">
+                    <li><b>84%</b>好评度</li>
+                    <li>
+                        <div class="p">
+                            <span>不错呦</span>
+                            <div class="outdiv" >
+                                <div class="innerdiv">
+                                </div>
+                            </div>
+                            <span>84%</span>
+                        </div>
+                        <div class="p">
+                            <span>待提高</span>
+                            <div class="outdiv" >
+                                <div class="innerdiv p8">
+                                </div>
+                            </div>
+                            <span>8%</span>
+                        </div>
+                        <div class="p">
+                            <span>小失落</span>
+                            <div class="outdiv" >
+                                <div class="innerdiv p8">
+                                </div>
+                            </div>
+                            <span>8%</span>
+                        </div>
+                    </li>
+                    <li class="lastli">
+                        <p class="">发布评价即可获10积分，</p>
+                        <p class="w-375">APP上传图片并晒单即可获得20积分，前5名可获双倍积分。</p>
+                    </li>
+                </ul>
+                <div class="list-checkbox">
+                    <input type="radio" name="nihao"><span>全部评论</span>
+                    <input type="radio" name="nihao"><span>不错哟</span>
+                    <input type="radio" name="nihao"><span>待提交</span>
+                    <input type="radio" name="nihao"><span>小失落</span>
+                </div>
+                <div class="say-list">
+                    <div class="say-list-left">
+                        <img src="../img/dd9430a09aafdbdb5842fd194768b250_130.jpg">
+                        <span>135****7197</span>
+                    </div>
+                    <div class="say-list-right">
+                        <p><span>评分</span><i></i><i></i><i></i><i></i><i></i></p>
+                        <p><span>内容</span>      以为水蜜桃是软软的糯糯的，谁知道是硬桃。不过蛮甜的。
+                        </p>
+                        <p class="lastp"><span></span>
+                            2016-07-24 22:18:10      
+                        </p>
+                    </div>
+                </div>
+                <div class="say-list">
+                    <div class="say-list-left">
+                        <img src="../img/dd9430a09aafdbdb5842fd194768b250_130.jpg">
+                        <span>135****7197</span>
+                    </div>
+                    <div class="say-list-right">
+                        <p><span>评分</span><i></i><i></i><i></i><i></i><i></i></p>
+                        <p><span>内容</span>      以为水蜜桃是软软的糯糯的，谁知道是硬桃。不过蛮甜的。
+                        </p>
+                        <p class="lastp"><span></span>
+                            2016-07-24 22:18:10      
+                        </p>
+                    </div>
+                </div>
+                <div class="say-list">
+                    <div class="say-list-left">
+                        <img src="../img/dd9430a09aafdbdb5842fd194768b250_130.jpg">
+                        <span>135****7197</span>
+                    </div>
+                    <div class="say-list-right">
+                        <p><span>评分</span><i></i><i></i><i></i><i></i><i></i></p>
+                        <p><span>内容</span>      以为水蜜桃是软软的糯糯的，谁知道是硬桃。不过蛮甜的。
+                        </p>
+                        <p class="lastp"><span></span>
+                            2016-07-24 22:18:10      
+                        </p>
+                    </div>
+                </div>
+                <div class="say-list">
+                    <div class="say-list-left">
+                        <img src="../img/dd9430a09aafdbdb5842fd194768b250_130.jpg">
+                        <span>135****7197</span>
+                    </div>
+                    <div class="say-list-right">
+                        <p><span>评分</span><i></i><i></i><i></i><i></i><i></i></p>
+                        <p><span>内容</span>      以为水蜜桃是软软的糯糯的，谁知道是硬桃。不过蛮甜的。
+                        </p>
+                        <p class="lastp"><span></span>
+                            2016-07-24 22:18:10      
+                        </p>
+                    </div>
+                </div>
+                <div class="say-list">
+                    <div class="say-list-left">
+                        <img src="../img/dd9430a09aafdbdb5842fd194768b250_130.jpg">
+                        <span>135****7197</span>
+                    </div>
+                    <div class="say-list-right">
+                        <p><span>评分</span><i></i><i></i><i></i><i></i><i></i></p>
+                        <p><span>内容</span>      以为水蜜桃是软软的糯糯的，谁知道是硬桃。不过蛮甜的。
+                        </p>
+                        <p class="lastp"><span></span>
+                            2016-07-24 22:18:10      
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="longimg-text">
+            <h5>最近浏览过</h5>
+            <ul>
+                <li>
+                    <a href="/prodetail/index/12117"  target="_blank">
+                        
+                            <img src="../img/1-180x180-12117-H2BU3ACB.jpg">
+                            <div class="span-p">
+                                <span>南汇水蜜桃（优级）</span>
+                                <p>￥78.00 / 6个</p>
+                            </div>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="/prodetail/index/12117"  target="_blank">
+                        
+                            <img src="../img/1-180x180-12117-H2BU3ACB.jpg">
+                            <div class="span-p">
+                                <span>南汇水蜜桃（优级）</span>
+                                <p>￥78.00 / 6个</p>
+                            </div>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="/prodetail/index/12117"  target="_blank">
+                        
+                            <img src="../img/1-180x180-12117-H2BU3ACB.jpg">
+                            <div class="span-p">
+                                <span>南汇水蜜桃（优级）</span>
+                                <p>￥78.00 / 6个</p>
+                            </div>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="/prodetail/index/12117"  target="_blank">
+                        
+                            <img src="../img/1-180x180-12117-H2BU3ACB.jpg">
+                            <div class="span-p">
+                                <span>南汇水蜜桃（优级）</span>
+                                <p>￥78.00 / 6个</p>
+                            </div>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+        
+
+    <!------------------------------liucheng---------------------------->
+    <div class="liucheng">
+        <ul>
+            <li class="list1"></li>
+            <li class="list2"></li>
+            <li class="list3"></li>
+            <li class="list4"></li>
+        </ul>
+    </div>
+    <!------------------------------foot-link---------------------------->
+    <div class="foot-link">
+        <div class="block4">
+                <div class="logo"></div>
+                <div class="tel"><img src="../img/guan_tel.png" alt=""></div>
+                <div class="servertime"><span class="font-color">服务时间</span> 08:00 - 22:00</div>
+        </div>
+        <ul class="block2 ">
+                <li><img src="../img/guan_ewcode1.jpg"><span>天天果园官方微信</span></li>
+                <li><img src="../img/guan_ewcode2.jpg"><span>天天果园APP</span></li>
+        </ul>
+        <ul class="block3">
+                <li><h4>购物指南</h4><a href="#">新用户注册</a><a href="#">在线下单</a><a href="#">支付方式</a></li>
+                <li><h4>配送说明</h4><a href="#">运费说明</a><a href="#">运费方式</a><a href="#">发票说明</a></li>
+                <li><h4>售后服务</h4><a href="#">退换货规则</a><a href="#">服务保障承诺</a><a href="#">验货与签收</a></li>
+                <li><h4>企业服务</h4><a href="#">企业订购</a><a href="#">公司简介</a><a href="#">定制专区</a></li>
+        </ul>
+    </div>
+    <!------------------------------foot-foot---------------------------->
+    <div class="foot-foot">
+        <p >版权所有 © 2015天天果园&nbsp;&nbsp;保留所有权利 | 沪ICP备12042163</p>
+        <p class="p2">天天果园&nbsp;&nbsp;鲜果网购</p>
+        <p class="p3"><a href=""><img src="../img/guan_shgs.gif" alt=""><img src="../img/guan_wgdjp.png" alt=""></a></p>
+    </div>
+
+    <!------------------------------fixfoot---------------------------->
+    <div  class="toolbarfoot" >
+        <a href="#" class="kq"></a>
+        <a href="#" class="kf"></a>
+        <a href="#" class="return-top"></a>
+    </div>
+     <!------------------------------buycar---------------------------->
+    <div  id="buycar" >
+        
+        <div class="shop-top">
+                <img src="../img/cha.png" alt="">
+        </div>
+        <div class="shop-content">
+            <div class="succese"><div class="succese-p"></div>加入购物车成功！</div>
+            <p class="row2">
+                购物车中共
+                <em class="cartcount">134</em>
+                件商品 | 商品小计
+                <em class="cartprice">￥14521.80</em>
+            </p>
+            <div class="buybutton">
+                <button class="continuebuy" title="点击此按钮，到下一步确认购买信息">继续购物</button>
+                <button class="gotobuy" title="加入购物车">去结算</button>      
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="overlay">
+    </div>
+
+
+
+</body>
+</html>
