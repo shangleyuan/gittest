@@ -7,7 +7,7 @@
 
 /**************************lazy***********************/
 .lazy{width: 100%;}
-.lazycon{width: 1280px;padding:10px 0 40px;overflow: hidden; }
+.lazycon{width: 1280px;padding:10px 0 40px;overflow: hidden;margin:0 auto; }
 .lazycon img{margin-right: 26px;}
 .lazycon img.lastimg{margin:0;}
 /**************************fruit***********************/
